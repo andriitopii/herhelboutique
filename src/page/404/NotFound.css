@@ -1,0 +1,19 @@
+.info-not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-not-found-title{
+    color: #000;
+font-family: CormorantInfantMed;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.section-404{
+    opacity: 0;
+}

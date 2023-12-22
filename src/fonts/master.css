@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: MontReg;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontMed;
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: MontSemBold;
+    src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: CormorantInfantReg;
+    src: url(./fonts/CormorantInfant-Regular.ttf);
+}
+@font-face {
+    font-family: CormorantInfantMed;
+    src: url(./fonts/CormorantInfant-Medium.ttf);
+}
+@font-face {
+    font-family: CormorantInfantBold;
+    src: url(./fonts/CormorantInfant-Bold.ttf);
+}
+@font-face {
+    font-family: CormorantInfantSemBold;
+    src: url(./fonts/CormorantInfant-SemiBold.ttf);}
+
+#root{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 80px ;
+    top: 156px;
+}
+
+.container{
+    display: flex;
+    width: 1530px;
+    max-width: 1530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    gap: 80px ;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

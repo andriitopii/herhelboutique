@@ -1,0 +1,120 @@
+.header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border-bottom: 1px solid #E8E8E8;
+    z-index: 9999;
+}
+
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav-search-cont{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    flex-grow: 1;
+}
+
+.search-icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("./img/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.search-input{
+    border: none;
+    padding: 16px 16px;
+    font-family: MontMed;
+    font-size: 16px;
+    outline: none;
+    color: cadetblue;
+}
+.search-input:focus{
+    font-family: MontMed;
+    color: #14130D;
+}
+
+.nav-menu{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+    margin: 0;
+    flex-grow: 2;
+
+}
+
+
+
+.nav-menu-item{
+    font-family: MontMed;
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #14130D;
+text-decoration: none;
+padding: 8px 0;
+transition:color ease-in-out 0.2s
+
+}
+
+.nav-menu-item:hover{
+    color: #F9B577;
+}
+.nav-menu-list{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo{
+    display: block;
+    background-image: url("./img/logo.png");
+    width: 292px;
+    height: 86px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bascket-btn{
+    display: block;
+    border: none;
+    width: 32px;
+    height: 32px;
+    background-image: url(./img/shopping_basket.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+
+.bascket-cont{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}

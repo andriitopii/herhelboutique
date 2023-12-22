@@ -1,0 +1,35 @@
+.brand-cont{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.brand-section{
+    opacity: 0;
+}
+
+.brand-list{
+    width: fit-content;
+    height: fit-content;
+
+}
+.brand-svg path{
+    transition: all ease 0.2s;
+}
+.brand-item{
+    display: flex;
+    width: 229px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand-item:hover .brand-svg path{
+    fill:#4C4C4C
+}
+
+

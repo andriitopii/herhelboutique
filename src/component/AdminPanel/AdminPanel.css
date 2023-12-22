@@ -1,0 +1,435 @@
+/*Login*/
+.container-login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1522337956741-4b9ce9700652?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 360px;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  opacity: 0;
+  padding: 16px 32px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.section-admin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  grid-template-columns: 300px 1fr;
+}
+
+.menu {
+  display: flex;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #313131;
+}
+
+.icon-btn-menu-admin {
+  display: block;
+  position: absolute;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-size: contain;
+}
+.i-b-m-a--add-product {
+  background-image: url("./image/add.svg");
+}
+.i-b-m-a--add-orders {
+  background-image: url("./image/orders.svg");
+}
+.i-b-m-a--add-catalog {
+  background-image: url("./image/catalog.svg");
+}
+.i-b-m-a--opinions {
+  background-image: url("./image/opinions.svg");
+}
+.i-b-m-a--log-out {
+  background-image: url("./image/log-out.svg");
+}
+.i-b-m-a--customors {
+  background-image: url("./image/custumors.svg");
+}
+.i-b-m-a--add-top {
+  background-image: url("./image/top.svg");
+}
+.i-b-m-a--add-hero {
+  background-image: url("./image/hero.svg");
+}
+.form-admin-text {
+  display: flex;
+  padding: 12px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  border: 2px solid #4c4c4c;
+  transition: all ease-in-out 0.25s;
+  color: #4c4c4c;
+  font-family: MontSemBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+
+.form-admin-text:focus {
+  border: 2px solid #f9b577;
+  color: #4c4c4c;
+}
+
+.btn-form-style {
+  display: flex;
+  width: fit-content;
+  padding: 8px 36px;
+  cursor: pointer;
+  font-family: MontSemBold;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  border: none;
+  border-radius: 8px;
+  background-color: #4c4c4c;
+  color: #fff;
+  transition: all ease-in-out 0.25s;
+}
+
+.btn-form-style:hover {
+  background-color: #f9b577;
+  color: #4c4c4c;
+}
+
+.btn-form-style:active {
+  transform: scale(0.9);
+}
+
+.btn-form-style:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.form-logo {
+  display: flex;
+
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  height: 90px;
+  font-family: MontSemBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 200% */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-logo--black {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: #070707;
+  width: 100%;
+  height: 90px;
+  font-family: MontSemBold;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 200% */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-logo--black::after {
+  display: block;
+  top: 15px;
+  right: 0;
+  position: absolute;
+  content: "ADMIN";
+  font-family: MontReg;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 200% */
+  top: 40px;
+  right: 48px;
+}
+
+.form-logo::after {
+  display: block;
+  top: 15px;
+  right: 0;
+  position: absolute;
+  content: "ADMIN";
+  font-family: MontReg;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 48px; /* 200% */
+  top: 40px;
+  right: 48px;
+}
+
+.form-copyright {
+  font-family: MontReg;
+  margin: 0;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  border: none;
+  border-radius: 4px;
+  color: #4c4c4c;
+  transition: all ease-in-out 0.25s;
+}
+
+.menu-dashboard {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  flex-direction: column;
+  align-items: stretch;
+  margin-top: 80px;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.btn-menu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-color: transparent;
+  padding: 8px 0;
+  font-family: MontReg;
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  transition: all ease-in-out 0.25s;
+}
+
+.btn-menu:focus {
+  background-color: #4c4c4c;
+}
+
+.menu-dashboard-list {
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-logout {
+  display: flex;
+  position: absolute;
+  bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  width: 95%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border: none;
+  font-family: MontReg;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  background-color: #e77e7e;
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+
+.btn-logout:hover {
+  background-color: #ec4b4b;
+}
+
+.content-admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  padding: 80px;
+  padding-left: 380px;
+  height: fit-content;
+}
+
+.form-add-prod {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 32px;
+  width: 100%;
+}
+
+.form-label {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  font-family: MontReg;
+  text-align: left;
+  color: #4c4c4c;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.col-form-add {
+  flex-grow: 1;
+  flex-basis: 360px;
+}
+
+.admin-section-title {
+  font-family: MontSemBold;
+  text-align: left;
+  color: #4c4c4c;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-mess {
+  position: absolute;
+  font-family: MontReg;
+  bottom: -31px;
+  opacity: 1;
+  text-align: left;
+  color: #ee3232;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-adm-selected {
+  display: flex;
+  padding: 8px;
+  font-family: MontReg;
+  color: #4c4c4c;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  box-sizing: border-box;
+  height: 45px;
+}
+
+.form-adm-input {
+  display: flex;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 16px;
+  font-family: MontMed;
+  color: #4c4c4c;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.form-ul-diferent {
+  margin: 0;
+  display: flex;
+  padding: 0;
+  gap: 16px;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.form-li-diferent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.form-li-diferent-start{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.form-li-diferent > input {
+  flex-grow: 1;
+  width: 100%;
+  
+}
+
+
+.--text-decoration{
+  text-decoration: line-through;
+}
+
+.form-add-variant--cont-row{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+}
+
+.form-admin-textarea{
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+  min-height: 250px;
+  font-family: MontMed;
+  color: #4c4c4c;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
